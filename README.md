@@ -23,6 +23,14 @@ You can use the .war in the target folder:  ErrorSpringApp.war, or you build it 
 
 mvn clean package 
 
+### Enable OverOps to Monitor Tomcat
+
+Edit the CATALINA_OPTS variable in the catalina.sh file:
+
+vi /opt/tomcat/bin/catalina.sh
+
+CATALINA_OPTS="$CATALINA_OPTS -agentpath:/opt/takipi/lib/libTakipiAgent.so -Dtakipi.application.name=TakipiTest -Dtakipi.deployment.name=v1.0 -Dtakipi.no.xmen"
+
 ### To Deploy the .war file under tomcat
 
 Copy the .war file:
