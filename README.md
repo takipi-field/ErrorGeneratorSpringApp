@@ -27,7 +27,7 @@ mvn clean package
 
 Copy the .war file:
 
-cp ./target/ErrorServlet.war /opt/tomcat/webapps/.
+cp ./target/ErrorSpringApp.war /opt/tomcat/webapps/.
 
 Restart tomcat, e.g., 
 
