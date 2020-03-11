@@ -31,8 +31,8 @@ cp ./target/ErrorServlet.war /opt/tomcat/webapps/.
 
 Restart tomcat, e.g., 
 
-<tomcat-dir>/bin/shutdown.sh
-<tomcat-dir>/bin/startup.sh
+${tomcat-dir}/bin/shutdown.sh
+${tomcat-dir}/bin/startup.sh
 
 ## To Run the Error Generator Sping Boot App
 
@@ -40,7 +40,7 @@ Restart tomcat, e.g.,
 
 Enter the following URL in the broswer to generate errors one at a time:
 
-<tomcat host>:8080/ErrorSpringApp
+${tomcat-host}:8080/ErrorSpringApp
 
 Select the type of error and click "Submit".
 
@@ -48,9 +48,9 @@ Select the type of error and click "Submit".
 
 Use the following URL to execute a single error:
 
-<tomcat cat>:8080/ErrorSpringApp/InvokeError?errorType=<error>
+d${tomcat-host}:8080/ErrorSpringApp/InvokeError?errorType=${error}
 
-Where <error> is one of
+Where ${error} is one of
   NoError
   NullPointerException
   NumberFormatException
