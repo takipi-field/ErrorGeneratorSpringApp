@@ -1,4 +1,4 @@
-# Error Generator Sping Boot Applictions
+# Error Generator Sping Boot Appliction
 A series of code utilities that generate random Java errors.
 
 This code is a variation/offshoot of the OverOps Error Generator:  https://github.com/takipi-field/ErrorGenerator
