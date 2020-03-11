@@ -48,7 +48,7 @@ Select the type of error and click "Submit".
 
 Use the following URL to execute a single error:
 
-d${tomcat-host}:8080/ErrorSpringApp/InvokeError?errorType=${error}
+${tomcat-host}:8080/ErrorSpringApp/InvokeError?errorType=${error}
 
 Where ${error} is one of
   NoError
@@ -59,7 +59,7 @@ Where ${error} is one of
 
 Scripts can be created using curl, e.g., 
 
-curl ${test_host}:8080/ErrorSpringApp/InvokeError?errorType=NullPointerException
+curl ${tomcat_host}:8080/ErrorSpringApp/InvokeError?errorType=NullPointerException
 
 ## Testing with JMeter
 
